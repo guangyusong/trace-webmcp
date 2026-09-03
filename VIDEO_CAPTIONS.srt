@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:05,000
+Chat is the wrong shape for visual thinking.
+
+2
+00:00:05,000 --> 00:00:12,000
+TRACE gives a person and an AI agent
+one shared reasoning surface.
+
+3
+00:00:12,000 --> 00:00:18,000
+I circle the thing I mean,
+and the gesture becomes exact semantic context.
+
+4
+00:00:18,000 --> 00:00:24,000
+Through WebMCP, ChatGPT reads the live board
+instead of guessing from pixels.
+
+5
+00:00:24,000 --> 00:00:31,000
+It draws gravity, normal force, and friction
+beside my block.
+
+6
+00:00:31,000 --> 00:00:38,000
+Then it derives the acceleration in place
+and turns the equation into motion.
+
+7
+00:00:38,000 --> 00:00:43,000
+These are bounded webpage operations,
+not simulated clicks.
+
+8
+00:00:43,000 --> 00:00:49,000
+Now I reject friction with one physical mark.
+
+9
+00:00:49,000 --> 00:00:55,000
+I did not write another prompt.
+I changed the shared model.
+
+10
+00:00:55,000 --> 00:01:01,000
+Every dependent expression recomputes
+from 4.06 to 4.91 metres per second squared.
+
+11
+00:01:01,000 --> 00:01:07,000
+The same language transfers to a domain
+where certainty is dangerous.
+
+12
+00:01:07,000 --> 00:01:13,000
+This straight arrow is an intentionally bad
+explanation of history.
+
+13
+00:01:13,000 --> 00:01:19,000
+I circle it and ask what is missing.
+
+14
+00:01:19,000 --> 00:01:27,000
+The agent expands it into dated decisions
+and interacting pressures.
+
+15
+00:01:27,000 --> 00:01:34,000
+Then it places two primary-source perspectives
+beneath the model.
+
+16
+00:01:34,000 --> 00:01:41,000
+One supports alliance escalation;
+the other complicates inevitability.
+
+17
+00:01:41,000 --> 00:01:47,000
+The reasoning appears
+where the question happened.
+
+18
+00:01:47,000 --> 00:01:53,000
+I cross out one decision.
+
+19
+00:01:53,000 --> 00:01:59,000
+TRACE weakens only the paths that depend on it
+and opens a possible negotiation window.
+
+20
+00:01:59,000 --> 00:02:05,000
+It does not pretend to predict an alternate past.
+The canvas is the prompt.

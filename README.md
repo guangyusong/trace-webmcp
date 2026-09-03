@@ -161,3 +161,6 @@ MIT © 2026 Guangyu Song. See [LICENSE](LICENSE).
 - [SUBMISSION.md](SUBMISSION.md) contains the project description and demo arc.
 - [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md) contains the two-minute narration and
   recording checklist.
+- [VIDEO_CAPTIONS.srt](VIDEO_CAPTIONS.srt) contains draft timed captions.
+- [CHATGPT_TEST.md](CHATGPT_TEST.md) is the real Site-tools acceptance test.
+- [DEVPOST.md](DEVPOST.md) contains field-ready submission copy.
