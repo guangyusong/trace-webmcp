@@ -13,7 +13,7 @@ agents.
 
 - Live app: <https://trace-webmcp.callboard.workers.dev/>
 - Source: <https://github.com/guangyusong/trace-webmcp>
-- Demo video: `ADD_PUBLIC_YOUTUBE_URL`
+- Demo video: <https://youtu.be/G0BP3hZZ0WQ>
 
 ## Inspiration
 
