@@ -148,3 +148,9 @@ and evidence-aware idea maps.
 ## License
 
 MIT © 2026 Guangyu Song. See [LICENSE](LICENSE).
+
+## Challenge materials
+
+- [SUBMISSION.md](SUBMISSION.md) contains the project description and demo arc.
+- [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md) contains the two-minute narration and
+  recording checklist.
