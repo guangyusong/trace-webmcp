@@ -28,6 +28,13 @@ guardrails are documented in [HISTORY_NOTES.md](HISTORY_NOTES.md).
 
 ## Run it
 
+Live production build:
+
+**[trace-webmcp.callboard.workers.dev](https://trace-webmcp.callboard.workers.dev/)**
+
+This is a manually deployed Cloudflare static-assets Worker. It has no backend,
+bindings, secrets, analytics integration, or GitHub connection.
+
 ```bash
 npm install
 npm run dev
@@ -46,9 +53,9 @@ npm run build
 npm start
 ```
 
-`npm start` listens on all interfaces at port `4180`, including this machine's
-Tailscale interface. This machine also proxies it through Tailscale Serve, so
-the recommended secure URL from another device on the same tailnet is:
+`npm start` listens on all interfaces at port `4180`, including the build
+machine's Tailscale interface. That machine also proxies it through Tailscale
+Serve for private testing:
 
 ```text
 https://c3d-standard-16-8core-64ram.taila8a1a.ts.net:8452

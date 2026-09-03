@@ -1,5 +1,9 @@
 # TRACE — challenge handoff
 
+Live demo: **[trace-webmcp.callboard.workers.dev](https://trace-webmcp.callboard.workers.dev/)**
+
+Source: **[github.com/guangyusong/trace-webmcp](https://github.com/guangyusong/trace-webmcp)**
+
 ## One-line pitch
 
 TRACE is a living reasoning surface where a person communicates with circles, cross-outs, and spatial edits while an agent understands and updates the same semantic artifact through WebMCP.
@@ -105,7 +109,8 @@ End on:
 - [x] Changes have visible actor receipts and undo.
 - [x] Board state persists locally.
 - [x] Keyboard and reduced-motion fallbacks are present.
-- [ ] Deploy the static `dist/` build to a public HTTPS URL.
+- [x] Deploy the static `dist/` build to a public HTTPS URL.
+- [x] Verify both live interaction loops on the production URL.
 - [ ] Test that URL in ChatGPT’s in-app browser.
 - [ ] Record and attach the final demo video.
 
