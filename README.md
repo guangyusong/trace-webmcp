@@ -162,5 +162,6 @@ MIT © 2026 Guangyu Song. See [LICENSE](LICENSE).
 - [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md) contains the two-minute narration and
   recording checklist.
 - [VIDEO_CAPTIONS.srt](VIDEO_CAPTIONS.srt) contains draft timed captions.
+- [YOUTUBE_UPLOAD.md](YOUTUBE_UPLOAD.md) contains upload metadata and checks.
 - [CHATGPT_TEST.md](CHATGPT_TEST.md) is the real Site-tools acceptance test.
 - [DEVPOST.md](DEVPOST.md) contains field-ready submission copy.
