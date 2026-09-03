@@ -1,92 +1,74 @@
-# TRACE demo video — 2:05 target
+# TRACE demo video — 50-second cut
 
-Record at 1920×1080, browser zoom 100%, with the activity rail and Site tools
-menu visible when relevant. Narration is the required audio; skip music and app
-sound effects. Add the supplied lines as captions after recording.
+Export at 1920×1080 and 30 fps. Keep the canvas pure white, UI labels black,
+human actions blue, and agent work brown. The edit uses short voice beats,
+burned-in captions, event-tied marker sounds, and motivated camera pushes.
 
-## 0:00–0:12 — premise
+## 0:00–0:07 — the gesture is the prompt
 
-**Picture:** Untouched incline scene. Circle the block.
-
-**Narration:**
-
-> Chat is the wrong shape for visual thinking. TRACE gives a person and an AI
-> agent one shared reasoning surface. I circle the thing I mean, and that
-> gesture becomes exact semantic context.
-
-## 0:12–0:42 — agent acts on the surface
-
-**Picture:** Ask ChatGPT to inspect the selection, draw the forces, solve the
-motion, and animate it. Let the real Site tool calls complete.
+**Picture:** Draw the TRACE path, then cut to a tight view of the learner
+circling the block.
 
 **Narration:**
 
-> Through WebMCP, ChatGPT reads the live board instead of guessing from pixels.
-> It draws gravity, normal force, and friction beside my block, derives the
-> acceleration in place, and turns the equation into motion. These are bounded
-> operations exposed by the webpage, not simulated clicks.
+> Circle it. The canvas becomes the prompt.
 
-## 0:42–1:00 — human interrupts
+> TRACE gives the agent the object, not a screenshot.
 
-**Picture:** Choose Cross out and strike through the friction arrow. Pause on
-the changed formula and answer.
+## 0:07–0:16 — reasoning appears in place
 
-**Narration:**
-
-> Now I reject friction with one physical mark. I did not write another prompt;
-> I changed the shared model. The vector fades and every dependent expression
-> recomputes from 4.06 to 4.91 metres per second squared.
-
-## 1:00–1:12 — transfer the language
-
-**Picture:** Switch to July 1914 and circle the direct assassination-to-war
-arrow.
+**Picture:** Push across the force vectors, derivation, motion, and changed
+answer as friction is rejected.
 
 **Narration:**
 
-> The same language transfers to a domain where certainty is dangerous. This
-> straight arrow is an intentionally bad explanation of history. I circle it
-> and ask what is missing.
+> It draws the forces, solves the motion, and moves the block.
 
-## 1:12–1:43 — evidence and causal structure
+> Cross out friction. Every dependent answer updates.
 
-**Picture:** ChatGPT calls `expand_causal_chain` and `compare_sources`. Pause on
-the completed timeline and source fragments.
+## 0:16–0:29 — the language transfers
 
-**Narration:**
-
-> The agent expands the arrow into dated decisions and interacting pressures,
-> then places two primary-source perspectives beneath the model. One supports
-> alliance escalation; the other complicates the idea that war was inevitable.
-> The reasoning appears where the question happened.
-
-## 1:43–1:58 — qualified counterfactual
-
-**Picture:** Cross out Russian mobilization. Pause on the weakened arrows,
-negotiation branch, and revised interpretation.
+**Picture:** Transform the force arrow into the July 1914 causal timeline, then
+focus on the missing decisions and source perspectives.
 
 **Narration:**
 
-> I cross out one decision. TRACE weakens only the paths that depend on it and
-> opens a possible negotiation window. It does not pretend to predict an
-> alternate past. Human judgment remains visible and reversible.
+> Same gesture. Messier problem.
 
-## 1:58–2:05 — close
+> One arrow cannot explain a world war. TRACE restores the decisions and the
+> sources.
 
-**Picture:** Briefly show the Site tools menu and activity receipts. End on the
-full surface.
+## 0:29–0:35 — challenge the model
+
+**Picture:** Remove Russian mobilization and follow the qualified negotiation
+branch.
 
 **Narration:**
 
-> One live artifact, two interfaces, and a conversation made of action. The
-> canvas is the prompt.
+> Remove one decision. The path bends instead of pretending history was fixed.
 
-## Recording checklist
+## 0:35–0:44 — native proof
 
-- Use a real ChatGPT in-app-browser run, not only **Rehearse agent**.
-- Keep the pointer still while agent animations play.
-- Show the Site tools menu for two to three seconds.
+**Picture:** Count from zero to fourteen beside the real ChatGPT Site-tools
+capture and cycle through the actual tool names.
+
+**Narration:**
+
+> Fourteen native WebMCP tools. Called live. Human and agent, working on one
+> surface.
+
+## 0:44–0:50 — close
+
+**Picture:** Return to the white TRACE mark and live/source URLs.
+
+**Narration:**
+
+> The canvas is the prompt.
+
+## Delivery checklist
+
+- Use real local app footage and the real ChatGPT Site-tools proof capture.
 - Avoid account menus, tokens, bookmarks, unrelated tabs, and notifications.
-- Export H.264 video with AAC narration and burned-in English captions.
-- Upload to YouTube as **Public** and verify playback while signed out before
-  submitting.
+- Export H.264 video with AAC audio and burned-in English captions.
+- Publish on YouTube and verify the public title and watch URL.
+- Confirm the public Devpost page embeds the new YouTube video.

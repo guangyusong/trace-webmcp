@@ -1,18 +1,18 @@
 :root {
-  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #eceae2;
-  background: #171815;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+  background: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --shell: #171815;
-  --shell-raised: #20211d;
-  --paper: #f0ead9;
-  --graphite: #20251f;
-  --muted: #888a80;
-  --line: rgba(239, 237, 226, 0.12);
-  --agent: #e7a83b;
-  --agent-deep: #a96d12;
-  --human: #376e69;
+  --shell: #ffffff;
+  --shell-raised: #f7f7f5;
+  --paper: #ffffff;
+  --graphite: #111111;
+  --muted: #6b6b68;
+  --line: rgba(17, 17, 17, 0.16);
+  --agent: #985438;
+  --agent-deep: #7c402b;
+  --human: #2855b6;
 }
 
 * {
@@ -41,7 +41,7 @@ summary:focus-visible {
 
 .app-shell {
   display: grid;
-  grid-template-rows: 64px minmax(0, 1fr);
+  grid-template-rows: 58px minmax(0, 1fr);
   height: 100%;
   background: var(--shell);
 }
@@ -50,8 +50,8 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: minmax(280px, 1fr) auto minmax(280px, 1fr);
   align-items: center;
-  height: 64px;
-  padding: 0 22px;
+  height: 58px;
+  padding: 0 18px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -75,8 +75,8 @@ summary:focus-visible {
   place-items: center;
   width: 29px;
   height: 29px;
-  color: var(--shell);
-  background: var(--agent);
+  color: #ffffff;
+  background: var(--human);
   border-radius: 50%;
 }
 
@@ -88,9 +88,7 @@ summary:focus-visible {
 
 .brand-tag {
   color: var(--muted);
-  font-family: Georgia, serif;
-  font-size: 12px;
-  font-style: italic;
+  font-size: 11px;
 }
 
 .scene-switcher {
@@ -106,7 +104,7 @@ summary:focus-visible {
   gap: 6px;
   height: 28px;
   padding: 0 10px;
-  color: #74766e;
+  color: #666666;
   background: transparent;
   border: 0;
   border-radius: 4px;
@@ -117,12 +115,12 @@ summary:focus-visible {
 }
 
 .scene-switcher button:hover {
-  color: #c8c6bc;
+  color: #111111;
 }
 
 .scene-switcher button.active {
-  color: #1f201c;
-  background: var(--agent);
+  color: #ffffff;
+  background: var(--human);
 }
 
 .saved-state {
@@ -151,18 +149,18 @@ summary:focus-visible {
 }
 
 .quiet-button {
-  color: #9f9f96;
+  color: #555555;
   background: transparent;
   border: 1px solid var(--line);
 }
 
 .quiet-button:hover {
-  color: #eceae2;
-  background: rgba(255, 255, 255, 0.04);
+  color: #111111;
+  background: #f4f4f2;
 }
 
 .demo-button {
-  color: #1f201c;
+  color: #ffffff;
   font-weight: 720;
   background: var(--agent);
   border: 1px solid transparent;
@@ -170,7 +168,7 @@ summary:focus-visible {
 
 .demo-button:hover:not(:disabled) {
   transform: translateY(-1px);
-  background: #f1b74f;
+  background: var(--agent-deep);
 }
 
 .demo-button:disabled {
@@ -180,7 +178,7 @@ summary:focus-visible {
 
 .workspace {
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr) 318px;
+  grid-template-columns: 54px minmax(0, 1fr);
   min-height: 0;
 }
 
@@ -189,8 +187,9 @@ summary:focus-visible {
   flex-direction: column;
   align-items: center;
   gap: 7px;
-  padding: 18px 0;
+  padding: 14px 0;
   border-right: 1px solid var(--line);
+  background: #ffffff;
 }
 
 .tool-button {
@@ -200,7 +199,7 @@ summary:focus-visible {
   width: 36px;
   height: 36px;
   padding: 0;
-  color: #7d7e76;
+  color: #5f5f5c;
   background: transparent;
   border: 0;
   border-radius: 5px;
@@ -210,8 +209,8 @@ summary:focus-visible {
 
 .tool-button:hover,
 .tool-button.active {
-  color: var(--agent);
-  background: rgba(231, 168, 59, 0.11);
+  color: var(--human);
+  background: rgba(40, 85, 182, 0.09);
 }
 
 .tool-button:disabled {
@@ -225,11 +224,11 @@ summary:focus-visible {
   left: 46px;
   width: max-content;
   padding: 6px 8px;
-  color: #e7e4da;
-  background: #292a25;
+  color: #ffffff;
+  background: #111111;
   border: 1px solid var(--line);
   border-radius: 4px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   content: attr(data-tooltip);
   font-size: 10px;
   opacity: 0;
@@ -254,23 +253,22 @@ summary:focus-visible {
   position: relative;
   min-width: 0;
   min-height: 0;
-  padding: 22px 24px 32px;
+  padding: 10px 16px 22px;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.035), transparent 33%),
-    #1b1c18;
+  background: #ffffff;
 }
 
 .paper-meta {
   position: absolute;
   z-index: 2;
-  top: 30px;
-  right: 34px;
-  left: 34px;
+  top: 24px;
+  right: 32px;
+  left: 32px;
   display: flex;
-  justify-content: space-between;
-  color: rgba(32, 37, 31, 0.43);
-  font-size: 9px;
+  justify-content: flex-start;
+  gap: 22px;
+  color: rgba(17, 17, 17, 0.48);
+  font-size: 10px;
   font-weight: 760;
   letter-spacing: 0.15em;
   pointer-events: none;
@@ -286,8 +284,9 @@ summary:focus-visible {
   height: 100%;
   overflow: hidden;
   background: var(--paper);
-  border-radius: 3px;
-  box-shadow: 0 26px 65px rgba(0, 0, 0, 0.34), 0 2px 0 rgba(255, 255, 255, 0.1) inset;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  border-radius: 0;
+  box-shadow: none;
   touch-action: none;
   user-select: none;
 }
@@ -304,7 +303,7 @@ summary:focus-visible {
 
 .eyebrow-svg {
   fill: rgba(32, 37, 31, 0.48);
-  font-family: Inter, ui-sans-serif, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -313,9 +312,10 @@ summary:focus-visible {
 
 .prompt-svg {
   fill: var(--graphite);
-  font-family: Georgia, serif;
-  font-size: 34px;
-  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
 }
 
 .handwritten {
@@ -362,8 +362,8 @@ summary:focus-visible {
 }
 
 .block-fill {
-  fill: #efe6d0;
-  stroke: #2d342d;
+  fill: #ffffff;
+  stroke: #111111;
   stroke-width: 3;
   transition: fill 180ms ease, stroke 180ms ease;
 }
@@ -383,8 +383,8 @@ summary:focus-visible {
 
 .block-object.selected .block-fill,
 .block-object.highlighted .block-fill {
-  fill: #f8d99d;
-  stroke: var(--agent-deep);
+  fill: rgba(40, 85, 182, 0.08);
+  stroke: var(--human);
 }
 
 .ramp-object.selected .ramp-fill {
@@ -402,12 +402,12 @@ summary:focus-visible {
 }
 
 .context-action rect {
-  fill: #315f5b;
+  fill: var(--human);
   cursor: pointer;
 }
 
 .context-action text {
-  fill: #f7f1df;
+  fill: #ffffff;
   font-family: "Segoe Print", cursive;
   font-size: 14px;
   pointer-events: none;
@@ -416,11 +416,11 @@ summary:focus-visible {
 
 .context-action.secondary rect {
   fill: transparent;
-  stroke: #315f5b;
+  stroke: var(--human);
 }
 
 .context-action.secondary text {
-  fill: #315f5b;
+  fill: var(--human);
 }
 
 .agent-ink {
@@ -510,14 +510,14 @@ summary:focus-visible {
 
 .answer-number {
   fill: var(--graphite);
-  font-family: Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 70px;
   font-variant-numeric: tabular-nums;
 }
 
 .answer-unit {
   fill: #596058;
-  font-family: Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
 }
 
@@ -873,12 +873,12 @@ summary:focus-visible {
   gap: 7px;
   height: 30px;
   padding: 0 11px;
-  color: #c7c4b9;
-  background: rgba(27, 28, 24, 0.93);
+  color: #333333;
+  background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--line);
   border-radius: 4px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
-  font-size: 10px;
+  box-shadow: none;
+  font-size: 11px;
   transform: translateX(-50%);
 }
 
@@ -886,9 +886,74 @@ summary:focus-visible {
   color: var(--agent);
 }
 
+.activity-pop {
+  position: absolute;
+  z-index: 4;
+  right: 34px;
+  bottom: 56px;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  max-width: 360px;
+  padding: 10px 13px 10px 10px;
+  color: #111111;
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(17, 17, 17, 0.18);
+  animation: activity-in 220ms ease both;
+  pointer-events: none;
+}
+
+.activity-pop > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.activity-pop strong {
+  overflow: hidden;
+  font-size: 11px;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.activity-pop small {
+  overflow: hidden;
+  color: #6b6b68;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.webmcp-badge {
+  position: absolute;
+  z-index: 4;
+  right: 34px;
+  top: 23px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 28px;
+  padding: 0 10px;
+  color: #111111;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(17, 17, 17, 0.16);
+  font-size: 10px;
+}
+
+.webmcp-badge strong {
+  font-size: 10px;
+}
+
+.webmcp-badge > span:last-child {
+  color: #6b6b68;
+}
+
 .activity-rail {
   position: relative;
-  display: grid;
+  display: none;
   grid-template-rows: auto auto minmax(0, 1fr) auto auto;
   min-width: 0;
   min-height: 0;
@@ -975,18 +1040,18 @@ summary:focus-visible {
   place-items: center;
   width: 23px;
   height: 23px;
-  color: #20211d;
-  background: #73766e;
+  color: #ffffff;
+  background: #777777;
   border-radius: 50%;
-  font-family: Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   font-style: italic;
   font-weight: 800;
 }
 
 .actor-mark.agent { background: var(--agent); }
-.actor-mark.human { color: #e4e3da; background: var(--human); }
-.actor-mark.system { color: #9b9d94; background: transparent; border: 1px solid var(--line); }
+.actor-mark.human { color: #ffffff; background: var(--human); }
+.actor-mark.system { color: #555555; background: transparent; border: 1px solid var(--line); }
 
 .activity-copy {
   display: flex;
@@ -1156,7 +1221,7 @@ summary:focus-visible {
 
 @media (max-width: 1050px) {
   .workspace {
-    grid-template-columns: 52px minmax(0, 1fr) 265px;
+    grid-template-columns: 52px minmax(0, 1fr);
   }
 
   .brand-tag,
@@ -1209,7 +1274,7 @@ summary:focus-visible {
 
   .workspace {
     grid-template-columns: 1fr;
-    grid-template-rows: 50px minmax(480px, 66svh) auto;
+    grid-template-rows: 50px minmax(480px, 66svh);
   }
 
   .tool-rail {
@@ -1252,9 +1317,7 @@ summary:focus-visible {
   }
 
   .activity-rail {
-    min-height: 420px;
-    border-top: 1px solid var(--line);
-    border-left: 0;
+    display: none;
   }
 
   .paper-meta {

@@ -137,7 +137,7 @@ WebMCP tool  ──┘          │
 - SVG renders both human and agent marks with different authorship cues.
 - Gesture recognition turns a closed lasso into stable semantic object IDs.
 - Every tool mutates the same state through one reversible operation path.
-- The activity rail makes agency, provenance, and consequences visible.
+- Inline receipts make agency, provenance, and consequences visible without shrinking the working canvas.
 
 ## Why this is WebMCP-native
 

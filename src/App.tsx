@@ -590,7 +590,7 @@ function App() {
     schedule(() => {
       setDemoRunning(false)
       setMode('crossout')
-      setNotice('Your turn — strike through the amber friction arrow')
+      setNotice('Your turn — strike through the brown friction arrow')
     }, 5050)
   }, [invokeTool, reset])
 
@@ -880,7 +880,7 @@ function App() {
               </marker>
             </defs>
 
-            <rect width="1200" height="720" className="paper-fill" filter="url(#paper-noise)" />
+            <rect width="1200" height="720" className="paper-fill" />
             {board.scene === 'incline' && (
             <g className="physics-scene scene-enter">
             <g className="problem-copy">
@@ -1080,6 +1080,20 @@ function App() {
               </g>
             )}
           </svg>
+          <div className={`activity-pop activity-${activity[0]?.actor ?? 'system'}`} aria-live="polite">
+            <span className={`actor-mark ${activity[0]?.actor ?? 'system'}`}>
+              {activity[0]?.actor === 'agent' ? 'A' : activity[0]?.actor === 'human' ? 'Y' : '·'}
+            </span>
+            <span>
+              <strong>{activity[0]?.label ?? 'Shared surface ready'}</strong>
+              {activity[0]?.detail && <small>{activity[0].detail}</small>}
+            </span>
+          </div>
+          <div className="webmcp-badge" aria-label={`${bridgeLabel}, ${TRACE_TOOLS.length} tools`}>
+            <span className={`connection-dot ${bridge}`} />
+            <strong>WebMCP</strong>
+            <span>{TRACE_TOOLS.length} tools</span>
+          </div>
           <div className="canvas-status" aria-live="polite">
             <Sparkles size={14} />
             <span>{notice}</span>

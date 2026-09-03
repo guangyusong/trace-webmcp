@@ -51,10 +51,10 @@ get_selection → get_board_state → draw_force_vectors → solve_motion
 → simulate_motion
 ```
 
-Pass: amber force vectors appear, the derivation ends at `4.06 m/s²`, and the
+Pass: brown force vectors appear, the derivation ends at `4.06 m/s²`, and the
 block moves down the incline.
 
-4. Use **Cross out** to strike through the amber friction arrow.
+4. Use **Cross out** to strike through the brown friction arrow.
 5. Send:
 
 > I rejected one assumption on the board. Inspect the live state and explain

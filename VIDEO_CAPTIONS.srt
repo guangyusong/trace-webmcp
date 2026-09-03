@@ -1,55 +1,40 @@
 1
-00:00:03,000 --> 00:00:05,351
-What if the canvas was the prompt?
+00:00:01,200 --> 00:00:04,467
+Circle it. The canvas becomes the prompt.
 
 2
-00:00:08,000 --> 00:00:12,362
-Circle the block. That gesture becomes exact context.
+00:00:04,400 --> 00:00:07,667
+TRACE gives the agent the object, not a screenshot.
 
 3
-00:00:14,000 --> 00:00:20,034
-Now the agent reads the live page, not pixels,
-and draws every force where the question lives.
+00:00:08,000 --> 00:00:12,133
+It draws the forces, solves the motion,
+and moves the block.
 
 4
-00:00:21,000 --> 00:00:22,959
-It solves. It moves.
+00:00:13,000 --> 00:00:16,933
+Cross out friction.
+Every dependent answer updates.
 
 5
-00:00:27,000 --> 00:00:35,908
-Then one human mark rejects friction.
-Every dependent answer changes.
-Four point zero six becomes four point nine one.
+00:00:17,000 --> 00:00:19,867
+Same gesture. Messier problem.
 
 6
-00:00:39,000 --> 00:00:41,194
-Same gesture. Harder question.
+00:00:20,500 --> 00:00:26,633
+One arrow cannot explain a world war.
+TRACE restores the decisions and sources.
 
 7
-00:00:44,000 --> 00:00:49,329
-One arrow says an assassination caused a world war.
-That is too simple.
+00:00:29,000 --> 00:00:34,667
+Remove one decision. The path bends
+instead of pretending history was fixed.
 
 8
-00:00:53,000 --> 00:00:57,911
-TRACE expands the missing decisions
-and brings two sources into the same surface.
+00:00:36,000 --> 00:00:43,667
+Fourteen native WebMCP tools. Called live.
+Human and agent on one surface.
 
 9
-00:01:02,000 --> 00:01:08,191
-Cross out mobilization. The path bends.
-War remains possible, not fixed.
-
-10
-00:01:12,000 --> 00:01:17,564
-Fourteen Site tools. Discovered by the page.
-Called live inside ChatGPT.
-
-11
-00:01:20,000 --> 00:01:25,721
-One artifact. Two interfaces.
-Visible authorship. Reversible actions.
-
-12
-00:01:26,000 --> 00:01:27,802
+00:00:45,333 --> 00:00:47,933
 The canvas is the prompt.

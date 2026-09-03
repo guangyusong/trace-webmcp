@@ -9,27 +9,21 @@ const outputDir = path.join(videoRoot, 'public', 'audio');
 const voiceId = 'FGY2WhTYpPnrIDTdsKH5'; // Laura: bright, warm, social-media delivery.
 
 const narration = [
-  ['vo-01', '[curious] What if the canvas was the prompt?'],
-  ['vo-02', '[confidently] Circle the block. That gesture becomes exact context.'],
-  ['vo-03', 'Now the agent reads the live page, not pixels, and draws every force where the question lives.'],
-  ['vo-04', '[playfully] It solves. It moves.'],
-  ['vo-05', 'Then one human mark rejects friction. Every dependent answer changes. Four point zero six becomes four point nine one.'],
-  ['vo-06', '[curious] Same gesture. Harder question.'],
-  ['vo-07', 'One arrow says an assassination caused a world war. That is too simple.'],
-  ['vo-08', 'TRACE expands the missing decisions and brings two sources into the same surface.'],
-  ['vo-09', 'Cross out mobilization. The path bends. War remains possible, not fixed.'],
-  ['vo-10', '[confidently] Fourteen Site tools. Discovered by the page. Called live inside ChatGPT.'],
-  ['vo-11', 'One artifact. Two interfaces. Visible authorship. Reversible actions.'],
-  ['vo-12', '[whispers] The canvas is the prompt.'],
+  ['vo2-01', '[confidently] Circle it. The canvas becomes the prompt.'],
+  ['vo2-02', 'TRACE gives the agent the object, not a screenshot.'],
+  ['vo2-03', '[quickly] It draws the forces, solves the motion, and moves the block.'],
+  ['vo2-04', 'Cross out friction. Every dependent answer updates.'],
+  ['vo2-05', '[curious] Same gesture. Messier problem.'],
+  ['vo2-06', 'One arrow cannot explain a world war. TRACE restores the decisions and the sources.'],
+  ['vo2-07', 'Remove one decision. The path bends instead of pretending history was fixed.'],
+  ['vo2-08', '[confidently] Fourteen native WebMCP tools. Called live. Human and agent, working on one surface.'],
+  ['vo2-09', '[whispers] The canvas is the prompt.'],
 ];
 
 const effects = [
-  ['sfx-ink', 'A single elegant graphite pencil circle drawn quickly on textured paper, close and dry, no voice', 0.8],
-  ['sfx-tool', 'A precise warm interface confirmation tick with a tiny glassy sparkle, minimal, no voice', 0.6],
-  ['sfx-crossout', 'Two brisk graphite pencil cross-out strokes on paper, close, tactile, no voice', 0.8],
-  ['sfx-number', 'A compact kinetic number-change tick rising one step, warm and intelligent, no voice', 0.6],
-  ['sfx-page', 'A restrained paper page turn blended with a soft cinematic whoosh, no voice', 1.1],
-  ['sfx-bed', 'A seamless minimal editorial pulse: warm muted percussion, soft paper texture, restrained momentum, intelligent and modern, no melody, no voice', 18, true],
+  ['sfx2-zoom', 'A fast clean camera push whoosh ending in a dry marker tap, modern and precise, no voice', 0.8],
+  ['sfx2-branch', 'Three quick hand-drawn line strokes branching across a whiteboard, tactile dry marker, no voice', 1.0],
+  ['sfx2-bed', 'A seamless crisp 112 BPM rhythm made from dry marker taps, wooden desk knocks, finger snaps and a restrained sub pulse, energetic educational short-form video, no melody, no voice', 20, true],
 ];
 
 async function exists(filePath) {

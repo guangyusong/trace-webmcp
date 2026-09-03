@@ -13,7 +13,7 @@ agents.
 
 - Live app: <https://trace-webmcp.callboard.workers.dev/>
 - Source: <https://github.com/guangyusong/trace-webmcp>
-- Demo video: <https://youtu.be/G0BP3hZZ0WQ>
+- Demo video: <https://youtu.be/klaUEc3-BEE>
 
 ## Inspiration
 
@@ -105,7 +105,7 @@ does not diverge from the actual agent operations.
 - One gesture language works across quantitative and interpretive domains.
 - Fourteen narrow WebMCP tools manipulate visible shared state.
 - Human rejection propagates through dependent calculations and causal links.
-- Agent and human authorship remain visible in a common activity history.
+- Agent and human authorship remain visible through inline receipts and a common undo history.
 - The entire experience is static, responsive, persistent, and reversible.
 - The production URL and both complete interaction loops have been verified.
 

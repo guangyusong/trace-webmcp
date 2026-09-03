@@ -24,7 +24,7 @@ Open on the untouched inclined-plane problem.
 
 > “Chat is the wrong shape for visual thinking. TRACE gives a person and an agent one shared surface.”
 
-Circle the block with the lasso. Point out the human receipt in the activity rail and call `get_selection` through the agent.
+Circle the block with the lasso. Point out the inline human receipt and call `get_selection` through the agent.
 
 ### 0:20–0:55 — physics becomes alive
 
@@ -84,7 +84,7 @@ The downstream arrows weaken, a negotiation window branches off, and the interpr
 
 Call `undo_last_change`. Show Russian mobilization and the original causal path
 return. Expand **Tool surface** and briefly show that actions are bounded and
-semantic. Point to authorship in the activity rail: amber `A` for agent, teal
+semantic. Point to authorship in the inline receipt: brown `A` for agent, blue
 `Y` for the person.
 
 ### 2:50–3:00 — why it generalizes
