@@ -1,95 +1,55 @@
 1
-00:00:00,000 --> 00:00:05,000
-Chat is the wrong shape for visual thinking.
+00:00:04,000 --> 00:00:06,351
+What if the canvas was the prompt?
 
 2
-00:00:05,000 --> 00:00:12,000
-TRACE gives a person and an AI agent
-one shared reasoning surface.
+00:00:10,000 --> 00:00:14,362
+Circle the block. That gesture becomes exact context.
 
 3
-00:00:12,000 --> 00:00:18,000
-I circle the thing I mean,
-and the gesture becomes exact semantic context.
+00:00:18,000 --> 00:00:24,034
+Now the agent reads the live page, not pixels,
+and draws every force where the question lives.
 
 4
-00:00:18,000 --> 00:00:24,000
-Through WebMCP, ChatGPT reads the live board
-instead of guessing from pixels.
+00:00:27,000 --> 00:00:28,959
+It solves. It moves.
 
 5
-00:00:24,000 --> 00:00:31,000
-It draws gravity, normal force, and friction
-beside my block.
+00:00:34,000 --> 00:00:42,908
+Then one human mark rejects friction.
+Every dependent answer changes.
+Four point zero six becomes four point nine one.
 
 6
-00:00:31,000 --> 00:00:38,000
-Then it derives the acceleration in place
-and turns the equation into motion.
+00:00:48,000 --> 00:00:50,194
+Same gesture. Harder question.
 
 7
-00:00:38,000 --> 00:00:43,000
-These are bounded webpage operations,
-not simulated clicks.
+00:00:55,000 --> 00:01:00,329
+One arrow says an assassination caused a world war.
+That is too simple.
 
 8
-00:00:43,000 --> 00:00:49,000
-Now I reject friction with one physical mark.
+00:01:05,000 --> 00:01:09,911
+TRACE expands the missing decisions
+and brings two sources into the same surface.
 
 9
-00:00:49,000 --> 00:00:55,000
-I did not write another prompt.
-I changed the shared model.
+00:01:16,000 --> 00:01:22,191
+Cross out mobilization. The path bends.
+War remains possible, not fixed.
 
 10
-00:00:55,000 --> 00:01:01,000
-Every dependent expression recomputes
-from 4.06 to 4.91 metres per second squared.
+00:01:28,000 --> 00:01:33,564
+Fourteen Site tools. Discovered by the page.
+Called live inside ChatGPT.
 
 11
-00:01:01,000 --> 00:01:07,000
-The same language transfers to a domain
-where certainty is dangerous.
+00:01:37,000 --> 00:01:42,721
+One artifact. Two interfaces.
+Visible authorship. Reversible actions.
 
 12
-00:01:07,000 --> 00:01:13,000
-This straight arrow is an intentionally bad
-explanation of history.
-
-13
-00:01:13,000 --> 00:01:19,000
-I circle it and ask what is missing.
-
-14
-00:01:19,000 --> 00:01:27,000
-The agent expands it into dated decisions
-and interacting pressures.
-
-15
-00:01:27,000 --> 00:01:34,000
-Then it places two primary-source perspectives
-beneath the model.
-
-16
-00:01:34,000 --> 00:01:41,000
-One supports alliance escalation;
-the other complicates inevitability.
-
-17
-00:01:41,000 --> 00:01:47,000
-The reasoning appears
-where the question happened.
-
-18
-00:01:47,000 --> 00:01:53,000
-I cross out one decision.
-
-19
-00:01:53,000 --> 00:01:59,000
-TRACE weakens only the paths that depend on it
-and opens a possible negotiation window.
-
-20
-00:01:59,000 --> 00:02:05,000
-It does not pretend to predict an alternate past.
+00:01:43,000 --> 00:01:44,802
 The canvas is the prompt.

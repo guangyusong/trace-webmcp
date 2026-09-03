@@ -6,3 +6,8 @@ output/
 *.tsbuildinfo
 vite.config.js
 vite.config.d.ts
+
+# Demo-video working media and generated deliverables.
+video/assets/
+video/public/
+video/output/

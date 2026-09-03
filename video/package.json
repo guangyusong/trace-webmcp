@@ -1,0 +1,20 @@
+{
+  "name": "trace-demo-video",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "audio": "node scripts/generate-audio.mjs",
+    "preview": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts TraceDemo output/trace-webmcp-demo.mp4 --codec h264 --audio-codec aac --crf 17 --pixel-format yuv420p",
+    "still": "remotion still src/index.ts TraceDemo output/trace-webmcp-thumbnail.png --frame 1120",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.520",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "remotion": "4.0.520",
+    "typescript": "5.9.3"
+  }
+}
