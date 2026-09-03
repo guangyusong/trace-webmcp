@@ -27,14 +27,15 @@ for the OpenAI WebMCP Challenge.
 
 ```text
 00:00 The canvas is the prompt
-00:10 Exact context from one circle
-00:18 Physics through Site tools
-00:34 Rejecting friction by gesture
-00:48 One language, another subject
-01:05 Expanding the July 1914 model
-01:16 A qualified counterfactual
-01:28 Native WebMCP proof
-01:41 One artifact, two interfaces
+00:08 Exact context from one circle
+00:14 Physics through Site tools
+00:27 Rejecting friction by gesture
+00:39 One language, another subject
+00:44 Challenging the July 1914 model
+00:53 Expanding the missing decisions
+01:02 A qualified counterfactual
+01:12 Native WebMCP proof
+01:24 One artifact, two interfaces
 ```
 
 ## Upload settings
@@ -43,13 +44,13 @@ for the OpenAI WebMCP Challenge.
 - Audience: **No, it's not made for kids**.
 - Language: English.
 - Captions: upload `VIDEO_CAPTIONS.srt` or burn them into the final export.
-- Thumbnail: use the completed physics surface with the activity rail visible.
+- Thumbnail: use the clean native-proof frame: **14 TOOLS. CALLED LIVE.**
 - Verify signed-out playback, audio, 1080p processing, captions, and the two
   links above before placing the URL in `DEVPOST.md`.
 
 ## Final file check
 
-The challenge cut is about 1:48 and must show real ChatGPT Site-tool
+The challenge cut is about 1:32 and must show real ChatGPT Site-tool
 calls. Export H.264 video with AAC audio at 1920×1080. The existing
 `output/playwright/trace-app-broll.mp4` is clean app-only B-roll; it is not the
 final proof because its agent steps use TRACE's deterministic rehearsal.

@@ -1,6 +1,6 @@
 # TRACE demo video
 
-This folder produces the 108-second challenge cut at 1920x1080 with Remotion.
+This folder produces the 92-second challenge cut at 1920x1080 with Remotion.
 It combines the real app B-roll, a native WebMCP capture from ChatGPT's built-in
 browser, short ElevenLabs voice beats, burned-in captions, and original sound
 effects. A quiet original editorial pulse supports the intentional gaps without

@@ -12,37 +12,37 @@ import {
   useVideoConfig,
 } from 'remotion';
 
-const ink = '#171815';
-const ivory = '#f1ead9';
-const amber = '#e8a83b';
-const teal = '#4a9b8b';
+const ink = '#111111';
+const paper = '#fafaf7';
+const blue = '#2855b6';
+const brown = '#985438';
 
 const narration = [
-  {from: 120, file: 'vo-01.mp3', caption: 'What if the canvas was the prompt?'},
-  {from: 300, file: 'vo-02.mp3', caption: 'Circle the block. The gesture becomes exact context.'},
-  {from: 540, file: 'vo-03.mp3', caption: 'The agent reads the live page — not pixels.'},
-  {from: 810, file: 'vo-04.mp3', caption: 'It solves. It moves.'},
-  {from: 1020, file: 'vo-05.mp3', caption: 'One human mark changes every dependent answer.'},
-  {from: 1440, file: 'vo-06.mp3', caption: 'Same gesture. Harder question.'},
-  {from: 1650, file: 'vo-07.mp3', caption: 'One arrow cannot explain a world war.'},
-  {from: 1950, file: 'vo-08.mp3', caption: 'Missing decisions and conflicting sources appear in place.'},
-  {from: 2280, file: 'vo-09.mp3', caption: 'The path bends. War remains possible — not fixed.'},
-  {from: 2640, file: 'vo-10.mp3', caption: null},
-  {from: 2910, file: 'vo-11.mp3', caption: null},
-  {from: 3090, file: 'vo-12.mp3', caption: null},
+  {from: 90, file: 'vo-01.mp3', caption: 'What if the canvas was the prompt?'},
+  {from: 240, file: 'vo-02.mp3', caption: 'Circle the block. The gesture becomes exact context.'},
+  {from: 420, file: 'vo-03.mp3', caption: 'The agent reads the live page — not pixels.'},
+  {from: 630, file: 'vo-04.mp3', caption: 'It solves. It moves.'},
+  {from: 810, file: 'vo-05.mp3', caption: 'One human mark changes every dependent answer.'},
+  {from: 1170, file: 'vo-06.mp3', caption: 'Same gesture. Harder question.'},
+  {from: 1320, file: 'vo-07.mp3', caption: 'One arrow cannot explain a world war.'},
+  {from: 1590, file: 'vo-08.mp3', caption: 'Missing decisions and conflicting sources appear in place.'},
+  {from: 1860, file: 'vo-09.mp3', caption: 'The path bends. War remains possible — not fixed.'},
+  {from: 2160, file: 'vo-10.mp3', caption: null},
+  {from: 2400, file: 'vo-11.mp3', caption: null},
+  {from: 2580, file: 'vo-12.mp3', caption: null},
 ];
 
 const soundCues = [
-  {from: 285, file: 'sfx-ink.mp3', volume: 0.34},
-  {from: 555, file: 'sfx-tool.mp3', volume: 0.25},
-  {from: 1010, file: 'sfx-crossout.mp3', volume: 0.3},
-  {from: 1190, file: 'sfx-number.mp3', volume: 0.27},
-  {from: 1430, file: 'sfx-page.mp3', volume: 0.28},
-  {from: 2630, file: 'sfx-tool.mp3', volume: 0.25},
-  {from: 3080, file: 'sfx-ink.mp3', volume: 0.22},
+  {from: 225, file: 'sfx-ink.mp3', volume: 0.34},
+  {from: 435, file: 'sfx-tool.mp3', volume: 0.25},
+  {from: 800, file: 'sfx-crossout.mp3', volume: 0.3},
+  {from: 980, file: 'sfx-number.mp3', volume: 0.27},
+  {from: 1160, file: 'sfx-page.mp3', volume: 0.28},
+  {from: 2150, file: 'sfx-tool.mp3', volume: 0.25},
+  {from: 2570, file: 'sfx-ink.mp3', volume: 0.22},
 ];
 
-const Caption: React.FC<{text: string}> = ({text}) => {
+const Caption: React.FC<{text: string; index: number}> = ({text, index}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const enter = spring({frame, fps, config: {damping: 18, mass: 0.7}});
@@ -51,23 +51,38 @@ const Caption: React.FC<{text: string}> = ({text}) => {
     extrapolateRight: 'clamp',
   });
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 62, pointerEvents: 'none'}}>
+    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'flex-start', padding: '0 0 52px 54px', pointerEvents: 'none'}}>
       <div style={{
-        maxWidth: 1500,
-        borderRadius: 999,
-        background: 'rgba(23,24,21,0.9)',
-        color: ivory,
-        fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif',
-        fontSize: 38,
-        fontWeight: 700,
-        letterSpacing: '-0.02em',
-        lineHeight: 1.15,
-        padding: '18px 34px 20px',
+        maxWidth: 1320,
+        background: paper,
+        color: ink,
+        border: `3px solid ${ink}`,
+        fontFamily: 'Arial, Helvetica, sans-serif',
+        fontSize: 36,
+        fontWeight: 800,
+        letterSpacing: '-0.025em',
+        lineHeight: 1.12,
+        padding: '15px 22px 17px 70px',
         opacity,
-        transform: `translateY(${(1 - enter) * 24}px) scale(${0.97 + enter * 0.03})`,
-        boxShadow: '0 18px 60px rgba(0,0,0,0.28)',
-        textAlign: 'center',
-      }}>{text}</div>
+        transform: `translateY(${(1 - enter) * 18}px)`,
+        position: 'relative',
+      }}>
+        <span style={{
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          bottom: 0,
+          width: 52,
+          display: 'grid',
+          placeItems: 'center',
+          background: index % 3 === 2 ? brown : blue,
+          color: paper,
+          borderRight: `3px solid ${ink}`,
+          fontSize: 20,
+          letterSpacing: 0,
+        }}>{String(index + 1).padStart(2, '0')}</span>
+        {text}
+      </div>
     </AbsoluteFill>
   );
 };
@@ -76,13 +91,12 @@ const BrandMark: React.FC<{size?: number}> = ({size = 96}) => (
   <div style={{
     width: size,
     height: size,
-    borderRadius: '50%',
-    background: amber,
+    background: paper,
+    border: `${Math.max(3, size * 0.055)}px solid ${ink}`,
     display: 'grid',
     placeItems: 'center',
-    boxShadow: '0 14px 50px rgba(232,168,59,0.25)',
   }}>
-    <div style={{width: size * 0.42, height: size * 0.42, border: `${Math.max(3, size * 0.055)}px solid ${ink}`, borderRadius: '50%'}} />
+    <div style={{width: size * 0.36, height: size * 0.36, background: blue, borderRadius: '50%'}} />
   </div>
 );
 
@@ -90,15 +104,24 @@ const Intro: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const reveal = spring({frame, fps, config: {damping: 16, stiffness: 90}});
-  const fade = interpolate(frame, [88, 118], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const fade = interpolate(frame, [62, 89], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <AbsoluteFill style={{background: ink, color: ivory, justifyContent: 'center', alignItems: 'center', opacity: fade}}>
-      <div style={{display: 'flex', alignItems: 'center', gap: 34, transform: `scale(${0.86 + reveal * 0.14})`, opacity: reveal}}>
-        <BrandMark size={112} />
-        <div>
-          <div style={{fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif', fontSize: 92, fontWeight: 800, letterSpacing: '0.18em'}}>TRACE</div>
-          <div style={{fontFamily: 'Georgia, serif', fontSize: 34, color: '#b8b3a8', fontStyle: 'italic'}}>the canvas is the prompt</div>
-        </div>
+    <AbsoluteFill style={{background: paper, color: ink, opacity: fade, fontFamily: 'Arial, Helvetica, sans-serif'}}>
+      <div style={{position: 'absolute', left: 110, top: 88, fontSize: 26, fontWeight: 900, letterSpacing: '.18em'}}>TRACE / 01</div>
+      <div style={{position: 'absolute', left: 108, top: 230, fontSize: 112, fontWeight: 900, lineHeight: .88, letterSpacing: '-.07em', transform: `translateY(${(1 - reveal) * 22}px)`, opacity: reveal}}>
+        THE CANVAS<br />IS THE PROMPT.
+      </div>
+      <svg width="620" height="500" viewBox="0 0 620 500" style={{position: 'absolute', right: 96, top: 286}}>
+        <path d="M55 125 C170 80 245 110 330 205 S470 330 555 275" fill="none" stroke={ink} strokeWidth="8" />
+        <path d="M534 247 L564 273 L526 287" fill="none" stroke={ink} strokeWidth="8" />
+        {[{x:70,y:120},{x:210,y:118},{x:335,y:210}].map((point, i) => (
+          <circle key={i} cx={point.x} cy={point.y} r="28" fill={blue} stroke={ink} strokeWidth="7" />
+        ))}
+        <rect x="508" y="242" width="68" height="68" fill={brown} stroke={ink} strokeWidth="7" />
+      </svg>
+      <div style={{position: 'absolute', left: 114, bottom: 80, display: 'flex', gap: 14, alignItems: 'center', fontSize: 24, fontWeight: 800}}>
+        <span style={{width: 52, height: 8, background: blue}} /> HUMAN MARK
+        <span style={{width: 52, height: 8, background: brown, marginLeft: 22}} /> AGENT RESULT
       </div>
     </AbsoluteFill>
   );
@@ -106,23 +129,23 @@ const Intro: React.FC = () => {
 
 const CameraBroll: React.FC = () => {
   const frame = useCurrentFrame();
-  const local = frame - 120;
+  const local = frame - 90;
   const zoom = interpolate(
     local,
-    [0, 220, 430, 690, 920, 1160, 1420, 1650, 1910, 2190, 2490],
-    [1.02, 1.11, 1.08, 1.15, 1.1, 1.02, 1.07, 1.12, 1.08, 1.13, 1.04],
+    [0, 360, 760, 1120, 1500, 1800, 2070],
+    [1.01, 1.06, 1.035, 1.075, 1.035, 1.065, 1.02],
     {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)},
   );
   const x = interpolate(
     local,
-    [0, 430, 920, 1420, 1910, 2490],
-    [0, -52, 56, 0, -24, 0],
+    [0, 520, 1030, 1540, 2070],
+    [0, -26, 30, -18, 0],
     {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)},
   );
   const y = interpolate(
     local,
-    [0, 920, 1420, 1910, 2490],
-    [0, -12, 0, -18, 0],
+    [0, 520, 1030, 1540, 2070],
+    [0, -8, 0, -10, 0],
     {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)},
   );
   return (
@@ -130,10 +153,9 @@ const CameraBroll: React.FC = () => {
       <OffthreadVideo
         src={staticFile('trace-app-broll.mp4')}
         muted
-        playbackRate={1.27}
-        style={{width: '100%', height: '100%', objectFit: 'cover', transform: `translate(${x}px, ${y}px) scale(${zoom})`}}
+        playbackRate={1.55}
+        style={{width: '100%', height: '100%', objectFit: 'cover', filter: 'saturate(.68) contrast(1.04)', transform: `translate(${x}px, ${y}px) scale(${zoom})`}}
       />
-      <div style={{position: 'absolute', inset: 0, boxShadow: 'inset 0 0 110px rgba(0,0,0,0.22)', pointerEvents: 'none'}} />
     </AbsoluteFill>
   );
 };
@@ -143,33 +165,28 @@ const NativeProof: React.FC = () => {
   const {fps} = useVideoConfig();
   const enter = spring({frame, fps, config: {damping: 20, mass: 0.8}});
   return (
-    <AbsoluteFill style={{background: ink, color: ivory, overflow: 'hidden'}}>
-      <div style={{position: 'absolute', inset: 0, background: 'radial-gradient(circle at 78% 42%, rgba(232,168,59,.15), transparent 38%)'}} />
-      <div style={{position: 'absolute', left: 120, top: 170, width: 760, opacity: enter, transform: `translateX(${(1 - enter) * -38}px)`}}>
-        <div style={{display: 'flex', alignItems: 'center', gap: 18, color: teal, fontFamily: 'Inter, sans-serif', fontSize: 24, fontWeight: 800, letterSpacing: '.14em', textTransform: 'uppercase'}}>
-          <span style={{width: 12, height: 12, borderRadius: '50%', background: teal, boxShadow: `0 0 20px ${teal}`}} />
-          Native proof
+    <AbsoluteFill style={{background: paper, color: ink, overflow: 'hidden', fontFamily: 'Arial, Helvetica, sans-serif'}}>
+      <div style={{position: 'absolute', left: 96, top: 84, width: 800, opacity: enter, transform: `translateX(${(1 - enter) * -28}px)`}}>
+        <div style={{fontSize: 24, fontWeight: 900, letterSpacing: '.15em', textTransform: 'uppercase'}}>REAL WEBMCP / 02</div>
+        <div style={{fontSize: 104, fontWeight: 900, lineHeight: .88, letterSpacing: '-.07em', marginTop: 76}}>
+          14 TOOLS.<br />
+          <span style={{color: blue}}>CALLED LIVE.</span>
         </div>
-        <div style={{fontFamily: 'Inter, sans-serif', fontSize: 86, fontWeight: 800, lineHeight: .98, letterSpacing: '-.055em', marginTop: 28}}>
-          14 site tools.<br />
-          <span style={{color: amber}}>One live page.</span>
+        <div style={{fontSize: 31, fontWeight: 700, lineHeight: 1.25, marginTop: 50, maxWidth: 650}}>
+          The page tells ChatGPT what the marks mean.<br />No pixel guessing. No fake clicks.
         </div>
-        <div style={{fontFamily: 'Georgia, serif', fontSize: 34, color: '#b8b3a8', lineHeight: 1.35, marginTop: 30, maxWidth: 650}}>
-          Discovered and called through WebMCP inside ChatGPT’s built-in browser.
-        </div>
+        <div style={{width: 290, height: 12, background: brown, marginTop: 54}} />
       </div>
       <div style={{
         position: 'absolute',
-        right: 130,
-        top: 52,
+        right: 102,
+        top: 36,
         width: 560,
-        height: 976,
-        borderRadius: 34,
+        height: 1008,
         overflow: 'hidden',
-        border: '1px solid rgba(255,255,255,.15)',
-        boxShadow: '0 34px 110px rgba(0,0,0,.55)',
+        border: `4px solid ${ink}`,
         background: '#fff',
-        transform: `translateX(${(1 - enter) * 80}px) rotate(${(1 - enter) * 2}deg)`,
+        transform: `translateX(${(1 - enter) * 60}px)`,
       }}>
         <OffthreadVideo
           src={staticFile('native-site-tools-panel.mp4')}
@@ -188,12 +205,12 @@ const Outro: React.FC = () => {
   const {fps} = useVideoConfig();
   const enter = spring({frame, fps, config: {damping: 18}});
   return (
-    <AbsoluteFill style={{background: ivory, color: ink, justifyContent: 'center', alignItems: 'center'}}>
-      <div style={{display: 'flex', alignItems: 'center', gap: 36, transform: `scale(${0.9 + enter * 0.1})`, opacity: enter}}>
-        <BrandMark size={104} />
+    <AbsoluteFill style={{background: ink, color: paper, justifyContent: 'center', alignItems: 'center'}}>
+      <div style={{display: 'flex', alignItems: 'center', gap: 34, transform: `translateY(${(1 - enter) * 18}px)`, opacity: enter}}>
+        <BrandMark size={92} />
         <div>
-          <div style={{fontFamily: 'Inter, sans-serif', fontSize: 74, fontWeight: 850, letterSpacing: '-.045em'}}>The canvas is the prompt.</div>
-          <div style={{fontFamily: 'Inter, sans-serif', fontSize: 27, color: '#6d6a62', marginTop: 16}}>trace-webmcp.callboard.workers.dev</div>
+          <div style={{fontFamily: 'Arial, Helvetica, sans-serif', fontSize: 78, fontWeight: 900, letterSpacing: '-.06em'}}>THE CANVAS IS THE PROMPT.</div>
+          <div style={{fontFamily: 'Arial, Helvetica, sans-serif', fontSize: 25, color: paper, marginTop: 20}}>trace-webmcp.callboard.workers.dev</div>
         </div>
       </div>
     </AbsoluteFill>
@@ -203,19 +220,19 @@ const Outro: React.FC = () => {
 export const TraceDemo: React.FC = () => (
   <AbsoluteFill style={{background: ink}}>
     <Audio src={staticFile('audio/sfx-bed.mp3')} loop volume={0.18} />
-    <Sequence from={0} durationInFrames={120}><Intro /></Sequence>
-    <Sequence from={120} durationInFrames={2520}><CameraBroll /></Sequence>
-    <Sequence from={2640} durationInFrames={390}><NativeProof /></Sequence>
-    <Sequence from={3030} durationInFrames={210}><Outro /></Sequence>
+    <Sequence from={0} durationInFrames={90}><Intro /></Sequence>
+    <Sequence from={90} durationInFrames={2070}><CameraBroll /></Sequence>
+    <Sequence from={2160} durationInFrames={360}><NativeProof /></Sequence>
+    <Sequence from={2520} durationInFrames={240}><Outro /></Sequence>
 
-    {narration.map(({from, file, caption}) => (
+    {narration.map(({from, file, caption}, index) => (
       <React.Fragment key={file}>
         <Sequence from={from}>
           <Audio src={staticFile(`audio/${file}`)} volume={1.4} />
         </Sequence>
         {caption ? (
           <Sequence from={from} durationInFrames={150}>
-            <Caption text={caption} />
+            <Caption text={caption} index={index} />
           </Sequence>
         ) : null}
       </React.Fragment>

@@ -7,7 +7,7 @@
     "audio": "node scripts/generate-audio.mjs",
     "preview": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts TraceDemo output/trace-webmcp-demo.mp4 --codec h264 --audio-codec aac --crf 17 --pixel-format yuv420p",
-    "still": "remotion still src/index.ts TraceDemo output/trace-webmcp-thumbnail.png --frame 1120",
+    "still": "remotion still src/index.ts TraceDemo output/trace-webmcp-thumbnail.png --frame 2240",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
